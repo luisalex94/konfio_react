@@ -1,8 +1,8 @@
 // src/ProductsServices.js
 import React from 'react';
-import './ProductsServices.css';
+import './Products.css';
 
-function ProductsServices() {
+function Products() {
   return (
     <div className="products-services">
       <h1>Productos y Servicios</h1>
@@ -12,4 +12,4 @@ function ProductsServices() {
   );
 }
 
-export default ProductsServices;
+export default Products;
