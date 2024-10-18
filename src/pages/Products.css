@@ -1,0 +1,13 @@
+/* src/ProductsServices.css */
+.products-services {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .products-services h1 {
+    color: #6200ea;
+  }
+  
+  .products-services p {
+    font-size: 1.2em;
+  }

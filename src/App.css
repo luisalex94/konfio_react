@@ -143,7 +143,7 @@
 
 .spacer-002 {
   height: 20px;
-  width: 200px;
+  width: auto;
 }
 
 .input-group {
@@ -160,6 +160,8 @@
 
 .input-group input::placeholder {
   color: #aaa;
+  text-align: center;
+  font-size: 1em;
 }
 
 button {

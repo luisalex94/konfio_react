@@ -46,12 +46,10 @@ function App() {
             <h2>Iniciar Sesión</h2>
             <form>
               <div className="input-group">
-                <label htmlFor="username">Usuario:</label>
-                <input type="text" id="username" name="username" required />
+                <input type="text" id="username" name="username" required placeholder='Usuario' />
               </div>
               <div className="input-group">
-                <label htmlFor="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required />
+                <input type="password" id="password" name="password" required placeholder='Contraseña' />
               </div>
               <button type="submit">Ingresar</button>
             </form>
