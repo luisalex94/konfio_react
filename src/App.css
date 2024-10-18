@@ -70,3 +70,107 @@
   margin-top: 20px;
   margin-left: 20px;
 }
+
+.background-box-001 {
+  position: relative;
+  height: 80px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: url('./assets/square_004.jpg');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-align: left;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.background-box-002 {
+  position: relative;
+  height: 80px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: url('./assets/square_005.jpg');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-align: left;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.background-box-003 {
+  position: relative;
+  height: 80px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: url('./assets/square_006.png');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-align: right;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.background-box-004 {
+  position: relative;
+  height: 80px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: url('./assets/square_007.png');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-align: left;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.box-text {
+  position: relative;
+  z-index: 1;
+}
+
+.spacer {
+  height: 20px;
+  width: 20px;
+}
+
+.spacer-002 {
+  height: 20px;
+  width: 200px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3700b3;
+}

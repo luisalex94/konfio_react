@@ -8,12 +8,6 @@ function App() {
       <header className="App-header">
         <div className="header-content">
           <nav>
-            <ul>
-              <li><a href="#terms">Términos y Condiciones</a></li>
-              <li><a href="#about">Quiénes Somos</a></li>
-              <li><a href="#products">Productos y Servicios</a></li>
-              <li><a href="#credit">Solicitar Crédito</a></li>
-            </ul>
           </nav>
           <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
         </div>
@@ -26,11 +20,41 @@ function App() {
           hasta pequeñas tiendas, Konfio está aquí para ayudarte a alcanzar tus metas.
         </p>
         <div className="columns">
-          <div className="column">
-            <p>Texto en la columna izquierda</p>
+          <div className="columns">
+            <div className="columns">
+              <div className="background-box-001">
+                <p className="box-text">Productos y servicios</p>
+              </div>
+              <div className="spacer"></div>
+              <div className="background-box-002">
+                <p className="box-text">¿Quienes somos?</p>
+              </div>
+              <div className="spacer"></div>
+              <div className="background-box-003">
+                <p className="box-text">Solicita tu crédito</p>
+              </div>
+              <div className="spacer"></div>
+              <div className="background-box-004">
+                <p className="box-text">Términos y <br /> condiciones</p>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="spacer-002"></div>
+            </div>
           </div>
           <div className="column">
-            <p>Texto en la columna derecha</p>
+            <h2>Iniciar Sesión</h2>
+            <form>
+              <div className="input-group">
+                <label htmlFor="username">Usuario:</label>
+                <input type="text" id="username" name="username" required />
+              </div>
+              <div className="input-group">
+                <label htmlFor="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <button type="submit">Ingresar</button>
+            </form>
           </div>
         </div>
       </header>
