@@ -1,13 +1,64 @@
-/* src/ProductsServices.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  position: relative;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.konfio-logo {
+  height: 80px;
+  
+}
+
+/* Para ocupar toda la pantalla con fondo morado */
 .products-services {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .products-services h1 {
-    color: #6200ea;
-  }
-  
-  .products-services p {
-    font-size: 1.2em;
-  }
+  height: 100vh; /* 100% de la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #800080; /* Color morado */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: white; /* Opcional: Cambiar el color del texto para que contraste con el fondo */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  grid-template-rows: repeat(2, 1fr);    /* 2 filas de igual tamaño */
+  gap: 20px;                             /* Espacio entre los rectángulos */
+  width: 100%;                           /* Ocupará todo el ancho */
+  height: 80%;                           /* Ocupará el 80% de la altura de la pantalla */
+}
+
+.product-box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;    /* Bordes suaves */
+  background-color: #f4f4f4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-box:hover {
+  transform: scale(1.05); /* Agrandar el rectángulo al pasar el ratón */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
