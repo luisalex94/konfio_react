@@ -84,6 +84,7 @@
     text-align: left;
     border: 2px solid white;
     border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
   }
   
   .background-box-002 {
@@ -99,6 +100,7 @@
     text-align: left;
     border: 2px solid white;
     border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
   }
   
   .background-box-003 {
@@ -114,6 +116,7 @@
     text-align: right;
     border: 2px solid white;
     border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
   }
   
   .background-box-004 {
@@ -129,6 +132,7 @@
     text-align: left;
     border: 2px solid white;
     border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
   }
   
   .box-text {

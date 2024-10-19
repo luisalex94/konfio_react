@@ -1,14 +1,27 @@
 import React from 'react';
 import './Products.css';
 import konfioLogo from '../../assets/konfio_logo_cuadrado.png';
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
+
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate('/');
+  }
+
   return (
 
     <div className="products-services">
       <div className="header-content">
         <nav>
-          <h1>Productos y Servicios</h1>
+          <div className="columns">
+            <div className="spacer"></div>
+            <button onClick={handleBack} className='back-button'>Regresar</button>
+            <h1 className='head-text'>Productos y Servicios</h1>
+            <div className="spacer"></div>
+          </div>
         </nav>
         <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
 
@@ -16,20 +29,20 @@ function Products() {
 
       <div className="grid-container">
         <div className="product-box">
-          <h2>Producto 1</h2>
-          <p>Descripción del producto 1.</p>
+          <h2>Prestamos empresariales</h2>
+          <p>Prespuesto para tus grandes ideas.</p>
         </div>
         <div className="product-box">
-          <h2>Producto 2</h2>
-          <p>Descripción del producto 2.</p>
+          <h2>Micropréstamos</h2>
+          <p>Préstamos pequeños para quienes apenas comienzan.</p>
         </div>
         <div className="product-box">
-          <h2>Producto 3</h2>
-          <p>Descripción del producto 3.</p>
+          <h2>Hipotecas empresariales</h2>
+          <p>Integramos las hipotecas con productos bancarios para una máxima flexibilidad</p>
         </div>
         <div className="product-box">
-          <h2>Producto 4</h2>
-          <p>Descripción del producto 4.</p>
+          <h2>Terminales y otros</h2>
+          <p>Por que lo pequeño no es lo menos importante, las terminales y otros servicios te dan ofrecen seriedad y seguridad ante tus clientes.</p>
         </div>
       </div>
     </div>

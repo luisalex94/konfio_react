@@ -11,6 +11,14 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  width: 100%;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
 }
 
 .konfio-logo {
@@ -25,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #800080; /* Color morado */
+  background-color: rgb(158, 50, 158); /* Color morado */
 }
 
 h1 {
@@ -61,4 +69,17 @@ h1 {
 .product-box:hover {
   transform: scale(1.05); /* Agrandar el rectángulo al pasar el ratón */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.back-button {
+  height: 60px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(158, 50, 158);
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
