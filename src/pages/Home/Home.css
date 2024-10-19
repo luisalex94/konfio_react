@@ -1,182 +1,51 @@
-.App {
-    text-align: center;
+body {
+    background-color: #6a0dad; /* Morado */
+    font-family: Arial, sans-serif;
+    margin: 0;
   }
   
-  .App-header {
-    position: relative;
-    padding: 20px;
-  }
-  
-  .header-content {
+  .user-home header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px;
   }
   
   .konfio-logo {
-    height: 80px;
+    height: 50px;
   }
   
-  .circle-background {
-    position: absolute;
-    top: 20%;
-    left: -10%;
-    width: 150vw;
-    height: 150vw;
-    background-color: rgb(158, 50, 158);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-  
-  .columns {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .column {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .column:first-child {
-    border-right: 1px solid #ccc;
-  }
-  
-  .welcome-text {
-    font-size: 4em;
-    color: white;
-    text-align: left;
-    margin-left: 20px;
-  }
-  
-  .welcome-text span {
-    color: rgb(158, 50, 158);
-  }
-  
-  .welcome-subtitle {
-    font-size: 2em;
-    color: white;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  
-  .welcome-description {
-    font-size: 1.5em;
-    color: white;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  
-  .background-box-001 {
-    position: relative;
-    height: 80px;
-    width: 200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-image: url('../../assets/square_004.jpg');
-    background-size: cover;
-    background-position: top;
-    color: black;
-    text-align: left;
-    border: 2px solid white;
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .background-box-002 {
-    position: relative;
-    height: 80px;
-    width: 200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-image: url('../../assets/square_005.jpg');
-    background-size: cover;
-    background-position: top;
-    color: black;
-    text-align: left;
-    border: 2px solid white;
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .background-box-003 {
-    position: relative;
-    height: 80px;
-    width: 200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-image: url('../../assets/square_006.png');
-    background-size: cover;
-    background-position: top;
-    color: black;
-    text-align: right;
-    border: 2px solid white;
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .background-box-004 {
-    position: relative;
-    height: 80px;
-    width: 200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-image: url('../../assets/square_007.png');
-    background-size: cover;
-    background-position: top;
-    color: black;
-    text-align: left;
-    border: 2px solid white;
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .box-text {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .spacer {
-    height: 20px;
-    width: 20px;
-  }
-  
-  .spacer-002 {
-    height: 20px;
-    width: auto;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group input {
-    width: 100%;
+  .header-buttons button {
+    margin: 0 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    box-sizing: border-box;
-  }
-  
-  .input-group input::placeholder {
-    color: #aaa;
-    text-align: center;
-    font-size: 1em;
-  }
-  
-  button {
-    padding: 10px 20px;
+    background-color: white;
     border: none;
-    border-radius: 25px;
-    background-color: #6200ea;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #3700b3;
+  .header-buttons button:hover {
+    background-color: lightgray;
   }
+  
+  main {
+    padding: 20px;
+    color: white;
+  }
+  
+  .balance-section, .transactions-section {
+    margin-bottom: 20px;
+  }
+  
+  .transactions-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transactions-section li {
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

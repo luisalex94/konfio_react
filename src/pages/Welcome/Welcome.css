@@ -1,0 +1,197 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .konfio-logo {
+    height: 80px;
+  }
+  
+  .circle-background {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 150vw;
+    height: 150vw;
+    background-color: rgb(158, 50, 158);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .column:first-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  .welcome-text {
+    font-size: 4em;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .welcome-text span {
+    color: rgb(158, 50, 158);
+  }
+  
+  .welcome-subtitle {
+    font-size: 2em;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .welcome-description {
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .background-box-001 {
+    position: relative;
+    height: 80px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../../assets/square_004.jpg');
+    background-size: cover;
+    background-position: top;
+    color: black;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .background-box-002 {
+    position: relative;
+    height: 80px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../../assets/square_005.jpg');
+    background-size: cover;
+    background-position: top;
+    color: black;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .background-box-003 {
+    position: relative;
+    height: 80px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../../assets/square_006.png');
+    background-size: cover;
+    background-position: top;
+    color: black;
+    text-align: right;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .background-box-004 {
+    position: relative;
+    height: 80px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../../assets/square_007.png');
+    background-size: cover;
+    background-position: top;
+    color: black;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .box-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .spacer {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .spacer-002 {
+    height: 20px;
+    width: auto;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  
+  .input-group input::placeholder {
+    color: #aaa;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(158, 50, 158);
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3700b3;
+  }
+
+  .loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid rgb(158, 50, 158);; /* Color de la parte superior del círculo */
+    border-radius: 50%;
+    width: 30px; /* Tamaño del círculo */
+    height: 30px; /* Tamaño del círculo */
+    animation: spin 1s linear infinite; /* Animación de rotación */
+    margin: 10px auto; /* Centrar el círculo */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
