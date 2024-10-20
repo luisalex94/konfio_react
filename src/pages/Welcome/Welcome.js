@@ -51,6 +51,10 @@ function Welcome() {
     }
   };
 
+  const crateUser = () => {
+    navigate('/create-user');
+  }
+
 
   const [account, setAccount] = useState('');
   const [password, setPassword] = useState('');
@@ -82,9 +86,8 @@ function Welcome() {
     <div className="App">
       <header className="App-header">
         <div className="header-content">
-          <nav>
-          </nav>
           <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
+          <button type="submit" onClick={crateUser} >Crear usuario</button>
         </div>
         <div className="circle-background"></div>
         <h1 className="welcome-text">Konfio</h1>
