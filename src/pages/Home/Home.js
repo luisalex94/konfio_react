@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
     const location = useLocation(); // Hook para acceder a la información pasada
     const { userData } = location.state || {}; // Extrae userData de location.state
-
     const [balance, setBalance] = useState(0.0);
     const [transactions, setTransactions] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -42,9 +41,9 @@ function Home() {
                         'Content-Type': 'application/json'
                     }
                 });
-                const movements = JSON.parse(response.data[0].movements)['movements'];
 
-                // Ver el tipo y si dice deposit cambiarlo a Deposito y si dice charge cambiarlo a Cargo
+                const movements = response.data.movements;
+
                 movements.forEach((movement) => {
                     if (movement.type === 'deposit') {
                         movement.type = 'Depósito';
@@ -56,7 +55,6 @@ function Home() {
                     }
                 });
 
-                console.log('Response transactions:', movements);
                 setTransactions(movements);
             } catch (error) {
                 console.error('Error fetching transactions:', error);

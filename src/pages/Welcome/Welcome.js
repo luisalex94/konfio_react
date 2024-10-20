@@ -30,11 +30,15 @@ function Welcome() {
       });
 
       console.log('Response:', response);
+      console.log('Response data:', response.data);
+      console.log('Response data[0]:', response.data.account);
 
       if (response.status === 200) {
-        const user = response.data[0];
+        const user = response.data;
         setUserData(user);
         setError(null);
+
+        console.log('Response - user:', user);
 
         navigate('/home', { state: { userData: user } });
       }
