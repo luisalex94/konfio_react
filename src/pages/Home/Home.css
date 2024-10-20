@@ -42,10 +42,17 @@ body {
   }
   
   .transactions-section li {
-    background-color: white;
-    color: black;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-  }
-  
+}
+
+.transactions-section li.deposit {
+    background-color: rgb(255, 255, 255); /* Color para depósitos */
+    color: black;
+}
+
+.transactions-section li.charge {
+    background-color: rgb(240, 108, 240); /* Color para cargos */
+    color: white;
+}

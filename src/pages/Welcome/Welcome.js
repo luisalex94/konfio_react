@@ -54,11 +54,7 @@ function Welcome() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // navigate('/products');
-    console.log('Click');
-    console.log('response:', userData);
-    console.log('separator');
-    console.log('account:', userData[0]);
+    navigate('/products');
   }
 
   const handleInputChange = (e) => {
@@ -98,7 +94,6 @@ function Welcome() {
           <div className="columns">
             <div className="columns">
               <div onClick={handleClick} className="background-box-001">
-
                 <p className="box-text">Productos y servicios</p>
               </div>
               <div className="spacer"></div>

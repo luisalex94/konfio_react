@@ -72,13 +72,11 @@ function Home() {
 
     const handleLogout = async (event) => {
         event.preventDefault();
-        setLoadingSignOut(true)
+        // setLoadingSignOut(true)
         setTimeout(() => {
             setLoadingSignOut(false);
-            //navigate('/');
         }, 2000)
-
-
+        navigate('/');
         console.log("Cerrando sesión...");
     };
 
@@ -121,7 +119,10 @@ function Home() {
                     <h2>Tus movimientos</h2>
                     <ul>
                         {transactions.slice().reverse().map((transaction, index) => (
-                            <li key={index}>
+                            <li
+                                key={index}
+                                className={transaction.type === 'Depósito' ? 'deposit' : 'charge'}
+                            >
                                 <p>{transaction.concept}: ${transaction.amount.toFixed(2)} - {transaction.date}</p>
                                 <p>{transaction.type} - {transaction.id}</p>
                             </li>
