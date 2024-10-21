@@ -41,6 +41,36 @@ const CreateUser = () => {
 
             if (response.status === 200) {
                 console.log('Usuario creado correctamente');
+
+                try {
+
+                    const data = response.data;
+
+                    const payload = {
+                        source: 'luisalex944@gmail.com',
+                        destination_email: data.user,
+                        subject: "Bienvenido a Konfio",
+                        user_name: data.name,
+                        account: data.account
+                    };
+
+                    const response_mail = await axios.post('https://xouhn8vhoh.execute-api.us-east-1.amazonaws.com/prod/send-email', payload, {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+
+                    console.log('Response:', response_mail);
+
+                    if (response_mail.status === 200) {
+                        console.log('Correo enviado correctamente');
+                    }
+
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+
+
                 window.history.back();
             }
 
