@@ -107,8 +107,14 @@ const CreateUser = () => {
                         <button type="submit">{loading ? 'Cargando...' : 'Crear Usuario'}</button>
                         <button type="button" onClick={() => window.history.back()}>Regresar</button>
                     </div>
-                    <Link to="/terms-and-conditions">Términos y Condiciones</Link>
                 </form>
+            </div>
+            <div className="welcome-welcome-footer">
+                <div>© Copyright The Konfio Foundation</div>
+                <div>|</div>
+                <div>Privacy Policy</div>
+                <div>|</div>
+                <div>Terms of Use</div>
             </div>
         </>
     );

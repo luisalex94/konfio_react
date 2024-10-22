@@ -1,9 +1,9 @@
-.App {
+.welcome-App {
   text-align: center;
   height: 100%;
 }
 
-.App-header {
+.welcome-App-header {
   position: relative;
   padding: 20px;
 }
@@ -15,11 +15,11 @@
   gap: 20px;
 }
 
-.konfio-logo {
-  height: 80px;
+.welcome-konfio-logo {
+  height: 60px;
 }
 
-.circle-background {
+.welcome-circle-background {
   position: fixed;
   top: 20%;
   left: -10%;
@@ -31,13 +31,13 @@
   z-index: -1;
 }
 
-.columns {
+.welcome-columns {
   display: flex;
   justify-content: right;
   padding: 20px;
 }
 
-.column {
+.welcome-column {
   flex: 1;
   padding: 20px;
   > h2 {
@@ -45,7 +45,7 @@
   }
 }
 
-.column:first-child {
+.welcome-column:first-child {
   border-right: 1px solid #ccc;
 }
 
@@ -76,7 +76,7 @@
   margin-left: 20px;
 }
 
-.background-box-001 {
+.welcome-background-box-001 {
   position: relative;
   height: 80px;
   width: 200px;
@@ -92,7 +92,7 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.background-box-002 {
+.welcome-background-box-002 {
   position: relative;
   height: 80px;
   width: 200px;
@@ -108,7 +108,7 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.background-box-003 {
+.welcome-background-box-003 {
   position: relative;
   height: 80px;
   width: 200px;
@@ -124,7 +124,7 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.background-box-004 {
+.welcome-background-box-004 {
   position: relative;
   height: 80px;
   width: 200px;
@@ -140,26 +140,26 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.box-text {
+.welcome-box-text {
   position: relative;
   z-index: 1;
 }
 
-.spacer {
+.welcome-spacer {
   height: 20px;
   width: 20px;
 }
 
-.spacer-002 {
+.welcome-spacer-002 {
   height: 20px;
   width: auto;
 }
 
-.input-group {
+.welcome-input-group {
   margin-bottom: 15px;
 }
 
-.input-group input {
+.welcome-input-group input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -167,7 +167,7 @@
   box-sizing: border-box;
 }
 
-.input-group input::placeholder {
+.welcome-input-group input::placeholder {
   color: #aaa;
   text-align: center;
   font-size: 1em;
@@ -182,11 +182,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.welcome-button:hover {
   background-color: #3700b3;
 }
 
-.loader {
+.welcome-loader {
   border: 4px solid rgba(255, 255, 255, 0.3);
   border-top: 4px solid rgb(158, 50, 158);
   ;
@@ -202,7 +202,7 @@ button:hover {
   /* Centrar el círculo */
 }
 
-.welcome-footer {
+.welcome-welcome-footer {
   display: flex;
   gap: 10px;
   font-size: 12px;
@@ -224,7 +224,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  .columns {
+  .welcome-columns {
     display: flex;
     flex-direction: column-reverse;
     padding: 20px;
@@ -232,7 +232,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .column {
+  .welcome-column {
     min-width: 300px;
   }
 }
