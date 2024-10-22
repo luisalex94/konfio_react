@@ -14,7 +14,7 @@ function Products() {
   return (
 
     <div className="products-services">
-      <div className="header-content">
+      <div className="products-header-content">
         <nav>
           <div className="columns">
             <div className="spacer"></div>

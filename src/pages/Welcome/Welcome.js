@@ -4,6 +4,7 @@ import konfioLogo from '../../assets/konfio_logo_cuadrado.png';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function Welcome() {
 
@@ -51,6 +52,15 @@ function Welcome() {
     }
   };
 
+  const handleError = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="#">Why do I have this issue?</a>'
+    });
+  }
+
   const crateUser = () => {
     navigate('/create-user');
   }
@@ -85,9 +95,9 @@ function Welcome() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="header-content">
-          <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
+        <div className="welcome-header-content">
           <button type="submit" onClick={crateUser} >Crear usuario</button>
+          <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
         </div>
         <div className="circle-background"></div>
         <h1 className="welcome-text">Konfio</h1>
@@ -124,21 +134,31 @@ function Welcome() {
             <h2>Iniciar Sesión</h2>
             <form>
               <div className="input-group">
-                <input type="text" id="username" name="username" required placeholder='Usuario' value={account} onChange={handleInputChange} />
+                <input type="text" id="username" name="username" required placeholder='Usuario 67608891' value={account} onChange={handleInputChange} />
               </div>
               <div className="input-group">
-                <input type="password" id="password" name="password" required placeholder='Contraseña' value={password} onChange={handlePasswordChange} />
+                <input type="password" id="password" name="password" required placeholder='Contraseña 123456' value={password} onChange={handlePasswordChange} />
               </div>
               {loading ? (
                 <div className="loader"></div>
-              ) : (
+              ) : (<>
                 <button type="submit" onClick={handleSubmit} >Ingresar</button>
+                <button type="submit" onClick={handleError} >Error</button>
+
+              </>
               )}
               {error && <p className="error-message">{error}</p>} {/* Mensaje de error si es necesario */}
             </form>
           </div>
         </div>
       </header>
+      <div className='welcome-footer'>
+        <div>© Copyright The Konfio Foundation</div>
+        <div>|</div>
+        <div>Privacy Policy</div>
+        <div>|</div>
+        <div>Terms of Use</div>
+      </div>
     </div>
   );
 }

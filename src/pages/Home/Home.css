@@ -1,58 +1,61 @@
 body {
-    background-color: #6a0dad; /* Morado */
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  .user-home header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .konfio-logo {
-    height: 50px;
-  }
-  
-  .header-buttons button {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: rgb(143, 62, 129);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .header-buttons button:hover {
-    background-color: lightgray;
-  }
-  
-  main {
-    padding: 20px;
-    color: white;
-  }
-  
-  .balance-section, .transactions-section {
-    margin-bottom: 20px;
-  }
-  
-  .transactions-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .transactions-section li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #6a0dad; /* Morado */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.user-home header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.konfio-logo {
+  height: 50px;
+}
+
+.header-buttons button {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: rgb(143, 62, 129);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-buttons button:hover {
+  background-color: lightgray;
+}
+
+main {
+  padding: 20px;
+  color: white;
+}
+
+.balance-section,
+.transactions-section {
+  margin-bottom: 20px;
+}
+
+.transactions-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transactions-section li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .transactions-section li.deposit {
-    background-color: rgb(255, 255, 255); /* Color para depósitos */
-    color: black;
+  background-color: rgb(255, 255, 255);
+  /* Color para depósitos */
+  color: black;
 }
 
 .transactions-section li.charge {
-    background-color: rgb(240, 108, 240); /* Color para cargos */
-    color: white;
+  background-color: rgb(240, 108, 240);
+  /* Color para cargos */
+  color: white;
 }
