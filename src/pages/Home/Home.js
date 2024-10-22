@@ -93,27 +93,27 @@ function Home() {
     }
 
     return (
-        <div className="user-home">
+        <div className="home-user-home">
             <header>
-                <img src={konfioLogo} alt="Konfio Logo" className="konfio-logo" />
-                <div className="header-buttons">
-                    <button className='fixed-button-a' onClick={handleRequestCredit}>Solicitar Crédito</button>
-                    <button className='fixed-button-a' onClick={handleSettings}>Configuración</button>
+                <img src={konfioLogo} alt="Konfio Logo" className="home-konfio-logo" />
+                <div className="home-header-buttons">
+                    <button className='home-fixed-button-a' onClick={handleRequestCredit}>Solicitar Crédito</button>
+                    <button className='home-fixed-button-a' onClick={handleSettings}>Configuración</button>
                     {loadingSignOut ? (
-                        <div className="loader"></div>
+                        <div className="home-loader"></div>
                     ) : (
-                        <button className='fixed-button-a' onClick={handleLogout}>Cerrar sesión</button>
+                        <button className='home-fixed-button-a' onClick={handleLogout}>Cerrar sesión</button>
                     )}
                 </div>
             </header>
             <main>
                 <h1>Bienvenido, {userData.name}</h1> {/* Nombre del usuario */}
-                <section className="balance-section">
+                <section className="home-balance-section">
                     <h2>Tu saldo</h2>
                     <p>${balance.toFixed(2)}</p>
                 </section>
 
-                <section className="transactions-section">
+                <section className="home-transactions-section">
                     <h2>Tus movimientos</h2>
                     <ul>
                         {transactions.slice().reverse().map((transaction, index) => (
