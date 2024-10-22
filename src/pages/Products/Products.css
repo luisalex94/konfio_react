@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
   position: relative;
   padding: 20px;
@@ -14,20 +10,21 @@
   width: 100%;
 }
 
-.head-text {
+.products-head-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 20px;
 }
 
-.konfio-logo {
-  height: 80px;
-  
+.products-konfio-logo {
+  height: 60px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 /* Para ocupar toda la pantalla con fondo morado */
-.products-services {
+.products-products-services {
   height: 100vh; /* 100% de la altura de la ventana */
   display: flex;
   flex-direction: column;
@@ -42,44 +39,76 @@ h1 {
   color: white; /* Opcional: Cambiar el color del texto para que contraste con el fondo */
 }
 
-.grid-container {
+.products-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
-  grid-template-rows: repeat(2, 1fr);    /* 2 filas de igual tamaño */
+  grid-template-columns: repeat(4, 1fr); /* 2 columnas de igual tamaño */
+  grid-template-rows: repeat(1, 1fr);    /* 2 filas de igual tamaño */
   gap: 20px;                             /* Espacio entre los rectángulos */
   width: 100%;                           /* Ocupará todo el ancho */
   height: 80%;                           /* Ocupará el 80% de la altura de la pantalla */
 }
 
-.product-box {
-  margin: 20px;
+.products-product-box-01 {
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 15px;    /* Bordes suaves */
-  background-color: #f4f4f4;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #ffdbfc;
+  box-shadow: 0px 4px 8px rgba(139, 0, 77, 0.1); /* Sombra suave */
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
   transition: transform 0.2s ease-in-out;
 }
 
-.product-box:hover {
-  transform: scale(1.05); /* Agrandar el rectángulo al pasar el ratón */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+.products-product-box-02 {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;    /* Bordes suaves */
+  background-color: #ffdbfc;
+  box-shadow: 0px 4px 8px rgba(139, 0, 77, 0.1); /* Sombra suave */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.2s ease-in-out;
 }
 
-.back-button {
-  height: 60px;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  color: rgb(158, 50, 158);
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+.products-product-box-03 {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;    /* Bordes suaves */
+  background-color: #ffdbfc;
+  box-shadow: 0px 4px 8px rgba(139, 0, 77, 0.1); /* Sombra suave */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.products-product-box-04 {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;    /* Bordes suaves */
+  background-color: #ffdbfc;
+  box-shadow: 0px 4px 8px rgba(139, 0, 77, 0.1); /* Sombra suave */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.products-product-box:hover {
+  transform: scale(1.05); /* Agrandar el rectángulo al pasar el ratón */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
