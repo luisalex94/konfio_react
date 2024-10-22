@@ -84,12 +84,12 @@ const CreateUser = () => {
 
     return (
         <>
-            <header className="app-header">
-                <img src={konfioLogo} alt="Logo" className="logo-top-right" />
+            <header className="createuser-app-header">
+                <img src={konfioLogo} alt="Logo" className="createuser-logo-top-right" />
             </header>
 
-            <div className="create-user-container">
-                <form className="create-user-form" onSubmit={handleCreateUser}>
+            <div className="createuser-create-user-container">
+                <form className="createuser-create-user-form" onSubmit={handleCreateUser}>
                     <h2>Crear Usuario</h2>
                     <label>
                         <input type="text" name="name" placeholder='Nombre' required value={name} onChange={(e) => setName(e.target.value)} />
@@ -103,7 +103,7 @@ const CreateUser = () => {
                     <label>
                         <input type="password" name="password" placeholder='Contraseña' required value={password} onChange={(e) => setPassword(e.target.value)} />
                     </label>
-                    <div className="form-buttons" onClick={handleCreateUser}>
+                    <div className="createuser-form-buttons" onClick={handleCreateUser}>
                         <button type="submit">{loading ? 'Cargando...' : 'Crear Usuario'}</button>
                         <button type="button" onClick={() => window.history.back()}>Regresar</button>
                     </div>
