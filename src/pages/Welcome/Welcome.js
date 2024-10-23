@@ -96,7 +96,7 @@ function Welcome() {
     <div className="welcome-App">
       <header className="welcome-App-header">
         <div className="welcome-header-content">
-          <button type="submit" onClick={crateUser} >Crear usuario</button>
+          <button type="submit" className='welcome-main-button' onClick={crateUser} >Crear usuario</button>
           <img src={konfioLogo} alt="Konfio Logo" className="welcome-konfio-logo" />
         </div>
         <div className="welcome-circle-background"></div>
@@ -142,7 +142,7 @@ function Welcome() {
               {loading ? (
                 <div className="welcome-loader"></div>
               ) : (<>
-                <button type="submit" onClick={handleSubmit} >Ingresar</button>
+                <button className='welcome-main-button' type="submit" onClick={handleSubmit} >Ingresar</button>
               </>
               )}
               {error && <p className="welcome-error-message">{error}</p>} {/* Mensaje de error si es necesario */}
@@ -151,7 +151,7 @@ function Welcome() {
         </div>
       </header>
       <div className="welcome-welcome-footer">
-        <div>© Copyright The Konfio Foundation</div>
+        <div>© Copyright The Konfio Company</div>
         <div>|</div>
         <div>Privacy Policy</div>
         <div>|</div>

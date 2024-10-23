@@ -110,7 +110,7 @@ const CreateUser = () => {
                 </form>
             </div>
             <div className="welcome-welcome-footer">
-                <div>© Copyright The Konfio Foundation</div>
+                <div>© Copyright The Konfio Company</div>
                 <div>|</div>
                 <div>Privacy Policy</div>
                 <div>|</div>

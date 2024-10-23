@@ -11,6 +11,15 @@ body {
   padding: 20px;
 }
 
+.home-main-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(158, 50, 158);
+  color: white;
+  cursor: pointer;
+}
+
 .home-konfio-logo {
   height: 40px;
 }

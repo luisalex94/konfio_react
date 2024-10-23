@@ -186,6 +186,15 @@ button {
   background-color: #3700b3;
 }
 
+.welcome-main-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(158, 50, 158);
+  color: white;
+  cursor: pointer;
+}
+
 .welcome-loader {
   border: 4px solid rgba(255, 255, 255, 0.3);
   border-top: 4px solid rgb(158, 50, 158);
