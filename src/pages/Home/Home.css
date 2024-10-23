@@ -15,6 +15,11 @@ body {
   height: 40px;
 }
 
+.home-header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .home-header-buttons button {
   margin: 0 10px;
   padding: 10px;

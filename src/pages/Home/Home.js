@@ -54,19 +54,55 @@ function Home() {
                         movement.amount = -movement.amount;
                     }
                 });
-
                 setTransactions(movements);
             } catch (error) {
                 console.error('Error fetching transactions:', error);
             }
-
-
         };
 
+        const updateUserData = async (event) => {
+            const payload = {
+              account: userData.account,
+              password: userData.password,
+            };
+        
+            setLoading(true);
+        
+            try {
+              const response = await axios.post('https://xouhn8vhoh.execute-api.us-east-1.amazonaws.com/prod/sign-in', payload, {
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              });
+        
+              console.log('Response:', response);
+              console.log('Response data:', response.data);
+              console.log('Response data[0]:', response.data.account);
+        
+              if (response.status === 200) {
+                const user = response.data;
+        
+                console.log('Response - user:', user);
+        
+                userData.name = user.name;
+
+                navigate('/home', { state: { userData: user } });
+              }
+
+        
+        
+            } catch (error) {
+              console.error('Error:', error);
+            } finally {
+              setLoading(false);
+            }
+          };
+
+        updateUserData();
         fetchBalance();
         fetchTransactions();
-        setLoading(false); // Simulando que ha terminado de cargar después de obtener los datos
-    }, [userData]);
+        setLoading(false);
+    }, []);
 
     const handleLogout = async (event) => {
         event.preventDefault();
@@ -84,7 +120,8 @@ function Home() {
     };
 
     const handleSettings = () => {
-        // Lógica para ir a la configuración
+
+        navigate('/configuration', { state: { userData: userData } });
         console.log("Abriendo configuración...");
     };
 
