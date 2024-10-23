@@ -54,6 +54,9 @@ function Home() {
                         movement.amount = -movement.amount;
                     }
                 });
+
+                console.log('Response transactions:', movements);
+
                 setTransactions(movements);
             } catch (error) {
                 console.error('Error fetching transactions:', error);
@@ -115,7 +118,8 @@ function Home() {
     };
 
     const handleRequestCredit = () => {
-        // Lógica para solicitar crédito
+        
+        navigate('/credit-application', { state: { userData: userData } });
         console.log("Solicitando crédito...");
     };
 
